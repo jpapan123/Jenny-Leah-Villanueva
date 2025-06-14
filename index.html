@@ -20,12 +20,14 @@
       font-family: 'Arial', sans-serif;
     }
 
-    body {
+    .wrapper {
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      min-height: 100vh;
+      padding: 20px;
     }
 
     .greetings {
@@ -73,27 +75,27 @@
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="greetings">
+      <span>T</span>
+      <span>H</span>
+      <span>A</span>
+      <span>N</span>
+      <span>K</span>
+      <span>Y</span>
+      <span>O</span>
+      <span>U</span>
+      <span>!</span>
+    </div>
 
-  <div class="greetings">
-    <span>T</span>
-    <span>H</span>
-    <span>A</span>
-    <span>N</span>
-    <span>K</span>
-    <span>Y</span>
-    <span>O</span>
-    <span>U</span>
-    <span>!</span>
+    <div class="description">
+      <p>Totemo tanoshikatta. Zutto genkide i te ne?</p>
+      <p>Mata aeru. Ashiteru.</p>
+    </div>
+
+    <div class="button">
+      <button><a href="flower.html">click here</a></button>
+    </div>
   </div>
-
-  <div class="description">
-    <p>Totemo tanoshikatta. Zutto genkide i te ne?</p>
-    <p>Mata aeru. Ashiteru.</p>
-  </div>
-
-  <div class="button">
-    <button><a href="flower.html">click here</a></button>
-  </div>
-
 </body>
 </html>
