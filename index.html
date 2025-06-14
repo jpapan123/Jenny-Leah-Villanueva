@@ -1,51 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowers</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/flowers.png" type="image/x-icon">
-    <script>
-        function playAudio() {
-            var audio = new Audio('path/to/die_with_a_smile.mp3');
-            audio.play();
-        }
-        window.onload = playAudio;
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flowers</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/flowers.png" type="image/x-icon" />
+  <script>
+    function playAudio() {
+      var audio = new Audio('path/to/die_with_a_smile.mp3'); // Replace with real path
+      audio.play();
+    }
+    window.onload = playAudio;
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .greetings {
+      font-size: 3rem;
+      letter-spacing: 10px;
+      margin-bottom: 20px;
+    }
+
+    .greetings span {
+      display: inline-block;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .button button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button button:hover {
+      background-color: #dddddd;
+    }
+
+    .button a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
 </head>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/flowers.png" type="image/x-icon" />
-    <title>Flowers</title>
-  </head>
-  <body>
+<body>
+  <div class="wrapper">
     <div class="greetings">
-      <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
       <span>T</span>
       <span>H</span>
       <span>A</span>
       <span>N</span>
       <span>K</span>
-
       <span>Y</span>
       <span>O</span>
       <span>U</span>
       <span>!</span>
     </div>
+
     <div class="description">
-      <span>Totemo tanoshikatta</span>
-      <span>Zutto genkide i te ne?</span>
-      <span>Mata aeru. ashiteru</span>
+      <p>Totemo tanoshikatta.</p>
+      <p>Zutto genkide i te ne?</p>
+      <p>Mata aeru. Ashiteru.</p>
     </div>
+
     <div class="button">
-      <button>
-        <a href="flower.html">click here</a>
-      </button>
+      <button><a href="flower.html">click here</a></button>
     </div>
-  </body>
+  </div>
+</body>
 </html>
